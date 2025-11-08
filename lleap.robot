@@ -13,6 +13,7 @@ ${APP_LOCATION}     C:\\Program Files (x86)\\Laerdal Medical\\Laerdal Simulation
 *** Test Cases ***
 Launching And Configuring LLEAP Application
     Navigate Buttons
+    Extracting Log files
 
 Extracting Log Files
     SKIP    Extracting Log files
@@ -66,6 +67,7 @@ Navigate Buttons
 
 
 Extracting Log files
+    Click           lleap-icon.png
     Wait Until Screen Contain     help_btn.png        5
     Right Click      help_btn.png   xOffset=0   yOffset=0
     Click           log.png
