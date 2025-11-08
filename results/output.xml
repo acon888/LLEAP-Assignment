@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-08T08:21:42.407327" rpa="false" schemaversion="5">
+<suite id="s1" name="Lleap" source="C:\Users\Acon08\Documents\LLEAP-Assignment\tests\lleap.robot">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Start Sikuli Process" owner="SikuliLibrary">
+<msg time="2025-11-08T08:21:42.442383" level="INFO">Starting process:
+java -jar C:\Users\Acon08\AppData\Local\Programs\Python\Python314\Lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 36047 C:\Users\Acon08\Documents\LLEAP-Assignment\results</msg>
+<msg time="2025-11-08T08:21:42.447394" level="INFO">Start sikuli java process on port 36047</msg>
+<msg time="2025-11-08T08:21:43.036370" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" start="2025-11-08T08:21:42.438609" elapsed="3.229806"/>
+</kw>
+<kw name="AND Read Image From Path">
+<kw name="Add Image Path" owner="SikuliLibrary">
+<msg time="2025-11-08T08:21:45.680948" level="INFO">[ERROR Commons] parameter(main: C:\Users\Acon08\Documents\LLEAP-Assignment\tests\images, sub: null)
+[ERROR Commons] makeURL: file does not exist: C:\Users\Acon08\Documents\LLEAP-Assignment\tests\images</msg>
+<arg>${IMAGE_PATH}</arg>
+<doc>Add image path</doc>
+<status status="PASS" start="2025-11-08T08:21:45.668878" elapsed="0.012144"/>
+</kw>
+<status status="PASS" start="2025-11-08T08:21:45.668695" elapsed="0.012404"/>
+</kw>
+<kw name="AND Open LLEAP App">
+<kw name="Open Application" owner="SikuliLibrary">
+<arg>${APP_LOCATION}</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" start="2025-11-08T08:21:45.681405" elapsed="2.388878"/>
+</kw>
+<status status="PASS" start="2025-11-08T08:21:45.681253" elapsed="2.389117"/>
+</kw>
+<arg>Start Sikuli Process</arg>
+<arg>AND Read Image From Path</arg>
+<arg>AND Open LLEAP App</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-08T08:21:42.438440" elapsed="5.631971"/>
+</kw>
+<test id="s1-t1" name="Launching LLEAP Application" line="14">
+<kw name="Navigate Buttons">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-11-08T08:21:51.452396" level="INFO">[error] ImagePath: find: not there: lleap_btn.png</msg>
+<msg time="2025-11-08T08:21:51.452409" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1762586511194.png'/&gt;
+[error] ImagePath: find: not there: lleap_btn.png</msg>
+<msg time="2025-11-08T08:21:51.452547" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(lleap_btn.png -- not valid!) S: 0.699999988079071</msg>
+<arg>lleap_btn.png</arg>
+<doc>Click</doc>
+<status status="FAIL" start="2025-11-08T08:21:48.071193" elapsed="3.381393">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(lleap_btn.png -- not valid!) S: 0.699999988079071</status>
+</kw>
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<arg>add_license_later_btn.png</arg>
+<arg>60</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.452708" elapsed="0.000020"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>add_license_later_btn.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.452792" elapsed="0.000014"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.452867" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<arg>Local_comp_btn.png</arg>
+<arg>60</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.452944" elapsed="0.000014"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>local_comp_btn.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453015" elapsed="0.000013"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453084" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<arg>SimMan3G_btn.png</arg>
+<arg>60</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453159" elapsed="0.000014"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>SimMan3G_btn.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453227" elapsed="0.000013"/>
+</kw>
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<arg>continue_without_btn.png</arg>
+<arg>60</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453297" elapsed="0.000013"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>continue_without_btn.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453362" elapsed="0.000012"/>
+</kw>
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<arg>international_btn.png</arg>
+<arg>60</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453431" elapsed="0.000012"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>international_btn.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453497" elapsed="0.000012"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453562" elapsed="0.000013"/>
+</kw>
+<kw name="Mouse Move Location" owner="SikuliLibrary">
+<arg>30</arg>
+<arg>30</arg>
+<doc>Mouse move locationMove the mouse pointer to the target location</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453631" elapsed="0.000012"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>mm.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453694" elapsed="0.000012"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>healthy-patient.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453763" elapsed="0.000013"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>ok-btn.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453825" elapsed="0.000012"/>
+</kw>
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<arg>start-session.png</arg>
+<arg>10</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453895" elapsed="0.000012"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>start-session.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.453960" elapsed="0.000012"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>maximize.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454021" elapsed="0.000012"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>eye.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454083" elapsed="0.000011"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>closed.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454142" elapsed="0.000012"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>67.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454205" elapsed="0.000011"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454270" elapsed="0.000013"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>coughing.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454332" elapsed="0.000012"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454411" elapsed="0.000013"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>play.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454474" elapsed="0.000012"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454537" elapsed="0.000013"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<arg>x.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" start="2025-11-08T08:21:51.454599" elapsed="0.000011"/>
+</kw>
+<status status="FAIL" start="2025-11-08T08:21:48.071012" elapsed="3.383681">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(lleap_btn.png -- not valid!) S: 0.699999988079071</status>
+</kw>
+<status status="FAIL" start="2025-11-08T08:21:48.070476" elapsed="3.384473">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(lleap_btn.png -- not valid!) S: 0.699999988079071</status>
+</test>
+<test id="s1-t2" name="Extracting Log Files" line="17">
+<kw name="Skip" owner="BuiltIn">
+<msg time="2025-11-08T08:21:51.455979" level="SKIP">Extracting Log files</msg>
+<arg>Extracting Log files</arg>
+<doc>Skips the rest of the current test.</doc>
+<status status="SKIP" start="2025-11-08T08:21:51.455838" elapsed="0.000214">Extracting Log files</status>
+</kw>
+<status status="SKIP" start="2025-11-08T08:21:51.455563" elapsed="0.000681">Extracting Log files</status>
+</test>
+<kw name="Stop Remote Server" owner="SikuliLibrary" type="TEARDOWN">
+<msg time="2025-11-08T08:21:51.459466" level="INFO">Robot Framework remote server stopping</msg>
+<doc>Stops the remote server.</doc>
+<status status="PASS" start="2025-11-08T08:21:51.456824" elapsed="0.002690"/>
+</kw>
+<doc>LLEAP QA Automation</doc>
+<status status="FAIL" start="2025-11-08T08:21:42.408336" elapsed="9.051211"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lleap" id="s1" pass="0" fail="1" skip="1">Lleap</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
