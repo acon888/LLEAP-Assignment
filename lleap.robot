@@ -15,8 +15,14 @@ Launching And Configuring LLEAP Application
     Navigate Buttons
     Extracting Log files
 
-Extracting Log Files
-    SKIP    Extracting Log files
+Extracting Log files
+    Click           lleap-icon.png
+    Wait Until Screen Contain     help_btn.png        5
+    Right Click      help_btn.png   xOffset=0   yOffset=0
+    Click           log.png
+    Wait Until Screen Contain       laerdal_report.png      300
+    Click           close.png
+    Log             Log files has been extracted
 
 
 *** Keywords ***
@@ -61,18 +67,5 @@ Navigate Buttons
     Sleep   5s
     Click   x.png
 
-
-
-
-
-
-Extracting Log files
-    Click           lleap-icon.png
-    Wait Until Screen Contain     help_btn.png        5
-    Right Click      help_btn.png   xOffset=0   yOffset=0
-    Click           log.png
-    Wait Until Screen Contain       laerdal_report.png      300
-    Click           close.png
-    Log             Log files has been extracted
     #This will open C:\Users\Public\Documents\Laerdal Report Zipped folder and the logs are saved from this folder
     # reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v PromptOnSecureDesktop /t REG_DWORD /d 0 /f ======== 1 to Enable 0 to disable
