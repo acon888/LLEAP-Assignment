@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation   LLEAP QA Automation
 Library         SikuliLibrary   mode=NEW
-#Library         myscript.py
 Library         Process
 
 
