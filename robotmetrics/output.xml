@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-09T13:55:32.315653" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\Acon08\Documents\LLEAP-Assignment\test.robot">
+<test id="s1-t1" name="Open Batch File" line="19">
+<kw name="Run Process" owner="Process">
+<msg time="2025-11-09T13:55:35.604393" level="INFO">Starting process:
+C:\Users\Acon08\Documents\LLEAP-Assignment/script.bat</msg>
+<msg time="2025-11-09T13:55:35.610059" level="INFO">Waiting for process to complete.</msg>
+<msg time="2025-11-09T13:55:35.620006" level="INFO">Process completed.</msg>
+<arg>C:\\Users\\Acon08\\Documents\\LLEAP-Assignment/script.bat</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2025-11-09T13:55:35.604238" elapsed="0.015850"/>
+</kw>
+<status status="PASS" start="2025-11-09T13:55:35.603572" elapsed="0.016741"/>
+</test>
+<status status="PASS" start="2025-11-09T13:55:32.316723" elapsed="3.304012"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
