@@ -1,28 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-09T13:55:32.315653" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-10T16:46:27.398470" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="C:\Users\Acon08\Documents\LLEAP-Assignment\test.robot">
-<test id="s1-t1" name="Open Batch File" line="19">
-<kw name="Run Process" owner="Process">
-<msg time="2025-11-09T13:55:35.604393" level="INFO">Starting process:
-C:\Users\Acon08\Documents\LLEAP-Assignment/script.bat</msg>
-<msg time="2025-11-09T13:55:35.610059" level="INFO">Waiting for process to complete.</msg>
-<msg time="2025-11-09T13:55:35.620006" level="INFO">Process completed.</msg>
-<arg>C:\\Users\\Acon08\\Documents\\LLEAP-Assignment/script.bat</arg>
-<doc>Runs a process and waits for it to complete.</doc>
-<status status="PASS" start="2025-11-09T13:55:35.604238" elapsed="0.015850"/>
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Start Sikuli Process" owner="SikuliLibrary">
+<msg time="2025-11-10T16:46:27.437911" level="INFO">Starting process:
+java -jar C:\Users\Acon08\AppData\Local\Programs\Python\Python314\Lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 37336 C:\Users\Acon08\Documents\LLEAP-Assignment\robotmetrics</msg>
+<msg time="2025-11-10T16:46:27.443047" level="INFO">Start sikuli java process on port 37336</msg>
+<msg time="2025-11-10T16:46:28.037234" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" start="2025-11-10T16:46:27.434185" elapsed="3.225438"/>
 </kw>
-<status status="PASS" start="2025-11-09T13:55:35.603572" elapsed="0.016741"/>
+<kw name="AND Read Image From Path">
+<kw name="Add Image Path" owner="SikuliLibrary">
+<arg>${IMAGE_PATH}</arg>
+<doc>Add image path</doc>
+<status status="PASS" start="2025-11-10T16:46:30.660069" elapsed="0.009170"/>
+</kw>
+<status status="PASS" start="2025-11-10T16:46:30.659900" elapsed="0.009418"/>
+</kw>
+<kw name="AND Open LLEAP App">
+<kw name="Open Application" owner="SikuliLibrary">
+<arg>${APP_LOCATION}</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" start="2025-11-10T16:46:30.669599" elapsed="1.329144"/>
+</kw>
+<status status="PASS" start="2025-11-10T16:46:30.669455" elapsed="1.329403"/>
+</kw>
+<arg>Start Sikuli Process</arg>
+<arg>AND Read Image From Path</arg>
+<arg>AND Open LLEAP App</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-10T16:46:27.434008" elapsed="4.564898"/>
+</kw>
+<test id="s1-t1" name="Test 1" line="37">
+<kw name="Deleting User Config File">
+<kw name="Start Process" owner="Process">
+<msg time="2025-11-10T16:46:31.999687" level="INFO">Starting process:
+C:\Users\Acon08\Documents\LLEAP-Assignment/script.bat</msg>
+<arg>C:\\Users\\Acon08\\Documents\\LLEAP-Assignment/script.bat</arg>
+<doc>Starts a new process on background.</doc>
+<status status="PASS" start="2025-11-10T16:46:31.999568" elapsed="0.006169"/>
+</kw>
+<status status="PASS" start="2025-11-10T16:46:31.999374" elapsed="0.006460"/>
+</kw>
+<kw name="Navigate Buttons">
+<kw name="Set Ocr Text Read" owner="SikuliLibrary">
+<arg>LLEAP - Instructor Application</arg>
+<doc>OCR text read
+If needed use Set OCR Language before.`
+Default language : English (eng).</doc>
+<status status="PASS" start="2025-11-10T16:46:32.006347" elapsed="0.002664"/>
+</kw>
+<kw name="Click Text" owner="SikuliLibrary">
+<msg time="2025-11-10T16:46:33.523449" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1762789593289.png'/&gt;</msg>
+<msg time="2025-11-10T16:46:33.523566" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Click text 'LLEAP - Instructor Application' failed with findWord method</msg>
+<arg>LLEAP - Instructor Application</arg>
+<doc>Click Text</doc>
+<status status="FAIL" start="2025-11-10T16:46:32.009151" elapsed="1.514478">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Click text 'LLEAP - Instructor Application' failed with findWord method</status>
+</kw>
+<status status="FAIL" start="2025-11-10T16:46:32.006110" elapsed="1.517678">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Click text 'LLEAP - Instructor Application' failed with findWord method</status>
+</kw>
+<status status="FAIL" start="2025-11-10T16:46:31.998974" elapsed="1.525100">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Click text 'LLEAP - Instructor Application' failed with findWord method</status>
 </test>
-<status status="PASS" start="2025-11-09T13:55:32.316723" elapsed="3.304012"/>
+<kw name="Stop Remote Server" owner="SikuliLibrary" type="TEARDOWN">
+<msg time="2025-11-10T16:46:33.527741" level="INFO">Robot Framework remote server stopping</msg>
+<doc>Stops the remote server.</doc>
+<status status="PASS" start="2025-11-10T16:46:33.525169" elapsed="0.002621"/>
+</kw>
+<doc>This is just a test</doc>
+<status status="FAIL" start="2025-11-10T16:46:27.399765" elapsed="6.128059"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+<stat name="Test" id="s1" pass="0" fail="1" skip="0">Test</stat>
 </suite>
 </statistics>
 <errors>
