@@ -1,8 +1,7 @@
 *** Settings ***
-Documentation   LLEAP QA Automation
+Documentation   LLEAP QA TEST AUTOMATION
 Library         SikuliLibrary   mode=NEW
 Library         Process
-
 
 Suite Setup     Run Keywords    Start Sikuli Process    AND Read Image From Path   AND Open LLEAP App
 Suite Teardown  Stop Remote Server
