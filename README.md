@@ -31,3 +31,7 @@ Python download link:
 https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
 
 
+# References:
+Link to Sikuli Library Documentation:
+https://marketsquare.github.io/robotframework-SikuliLibrary/docs/SikuliLibrary_dark.html
+
