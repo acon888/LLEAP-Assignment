@@ -9,5 +9,5 @@ Suite Teardown  Stop Remote Server
 Launching And Configuring LLEAP Application
     Deleting User Config File
     Navigate Buttons
-    Extracting Log files
-    Closing the LLEAP Application
+#    Extracting Log files
+#    Closing the LLEAP Application

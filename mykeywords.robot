@@ -44,6 +44,12 @@ Navigate Buttons
     Click   closed.png
     Click   67.png
     Sleep   2s
+    Click   hr.png
+    Sleep   2s
+    Click   80.png
+    Type With Modifiers     A   CTRL
+    Type With Modifiers     100
+    Click   hr-ok.png
     Click   coughing.png
     Sleep   2s
     Click   play.png
