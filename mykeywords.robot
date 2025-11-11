@@ -26,8 +26,8 @@ Navigate Buttons
     Wait Until Screen Contain   Local_comp_btn.png      60
     Click   Local_comp_btn.png
     Sleep   3s
-    Wait Until Screen Contain   SimMan3G_btn.png        60
-    Click   SimMan3G_btn.png
+    Wait Until Screen Contain   SimMan3GPlus.png        60
+    Click   SimMan3GPlus.png
     Wait Until Screen Contain   continue_without_btn.png        60
     Click   continue_without_btn.png
     Wait Until Screen Contain   international_btn.png       60
