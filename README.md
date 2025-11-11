@@ -1,5 +1,5 @@
 # LLEAP-Assignment
-This is my first Automation project use to test some functinalities of LLEAP application
+This is my first Automation project use to test some functionalities of LLEAP application
 
 ## Required Softwares and Libraries:
 1. The application uses python 3.14 and I havent tested with a different version lower than 3.14
@@ -11,9 +11,6 @@ This is my first Automation project use to test some functinalities of LLEAP app
 
 
 # Steps to install the LLEAP application
-1. To confirm that the application is successfully installed it will open the Program and Features window
-that will show you the laerdal application and the date on when it was installed.
-![Laerdal Application Successfully installed](readme-images/lleap-installed-checker.png)
 
 
 # Downloadable files needed to run this application
