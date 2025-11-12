@@ -40,5 +40,5 @@ https://aka.ms/download-jdk/microsoft-jdk-25.0.1-windows-x64.zip
 # References:
 
 Link to Sikuli Library Documentation:
-https://marketsquare.github.io/robotframework-SikuliLibrary/docs/SikuliLibrary\_dark.html
+https://marketsquare.github.io/robotframework-SikuliLibrary/docs/SikuliLibrary.html
 

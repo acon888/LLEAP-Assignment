@@ -18,6 +18,8 @@ pip freeze > requirements.txt
 installing my virtual environment to another machine:
 pip install -r requirements.txt
 
+https://marketsquare.github.io/robotframework-SikuliLibrary/docs/SikuliLibrary.html
+
 
 
 
