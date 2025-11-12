@@ -20,6 +20,7 @@ Open LLEAP App
     Open Application    ${APP_LOCATION}
 
 Navigate Buttons
+    Set Min Similarity  0.9
     Click   lleap_btn.png
     #Sleep   10s
     Wait Until Screen Contain   add_license_later_btn.png       60
@@ -45,7 +46,7 @@ Navigate Buttons
     Click   closed.png
     Click   67.png
     Sleep   2s
-    Click   hr.png
+    Click   r.png
     Sleep   2s
     Click   80.png
     Type With Modifiers     A   CTRL
