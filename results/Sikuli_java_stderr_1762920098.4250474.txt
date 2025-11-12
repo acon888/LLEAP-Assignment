@@ -1,0 +1,11 @@
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions prior to 1.8.
+SLF4J: Ignoring binding found at [jar:file:/C:/LLEAP-Assignment/.venv/Lib/site-packages/SikuliLibrary/lib/SikuliLibrary.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/C:/LLEAP-Assignment/.venv/Lib/site-packages/SikuliLibrary/lib/SikuliLibrary.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
