@@ -46,7 +46,7 @@ Navigate Buttons
     Click   closed.png
     Click   67.png
     Sleep   2s
-    Click   r.png
+    Click   hr.png
     Sleep   2s
     Click   80.png
     Type With Modifiers     A   CTRL
