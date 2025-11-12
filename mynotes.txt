@@ -7,5 +7,15 @@
 #    Run Keyword IF  ${LOCAL_COMP_exists} == True    Wait Until Screen Contain   Local_comp_btn.png      60
 #    Run Keyword IF     ${LOCAL_COMP_exists} == False   Click    virtual-simulator.png
 
+Activating my virtual environment
+.venv\Scripts\activate.bat
+
+Exporting my virtual environment
+pip freeze > requirements.txt
+
+installing my virtual environment to another machine:
+pip install -r requirements.txt
+
+
 
 

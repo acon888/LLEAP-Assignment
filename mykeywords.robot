@@ -6,6 +6,7 @@ Library     Process
 *** Variables ***
 ${IMAGE_PATH}   ${CURDIR}${/}images
 ${APP_LOCATION}     C:\\Program Files (x86)\\Laerdal Medical\\Laerdal Simulation Home\\LaunchPortal.exe
+#${LOCAL_COMP_exists}=   Exists      Local_comp_btn.png
 
 
 *** Keywords ***
@@ -25,6 +26,8 @@ Navigate Buttons
     Click   add_license_later_btn.png
     Wait Until Screen Contain   Local_comp_btn.png      60
     Click   Local_comp_btn.png
+#    Run Keyword IF  ${LOCAL_COMP_exists} == True    Wait Until Screen Contain   Local_comp_btn.png      60
+#    Run Keyword IF     ${LOCAL_COMP_exists} == False   Click    virtual-simulator.png
     Sleep   3s
     Wait Until Screen Contain   SimMan3GPlus.png        60
     Click   SimMan3GPlus.png
