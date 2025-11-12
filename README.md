@@ -12,7 +12,8 @@ This is my first Automation project use to test some functionalities of LLEAP ap
 All the required Softwares can be downloaded from the links below under **Downloadable files needed to run this application**
 
 # Steps to install the LLEAP application
-Installation of **LLEAP application** can be automated using the *installLLEAP.bat* file found in the scripts folder. All you need to do is copy the **scripts** folder into your C: drive. Once the **scripts** folder is in your C: drive then open the folder and run the *installLLEAP.bat* file as Administrator. It should be look like the image below.
+Installation of **LLEAP application** can be automated using the `installLLEAP.bat` file found in the scripts folder. All you need to do is copy the **`scripts`** folder into your `C:\` drive. Once the **`scripts`** folder is in your `C:\` drive then open the folder and run the `installLLEAP.bat` file as Administrator. It should be look like the image below.
+
 ![](readme-images/runasAdmin.png)
 
 
