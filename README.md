@@ -23,6 +23,12 @@ Installation of **LLEAP application** can be automated using the `installLLEAP.b
 ## $${\color{green}{2. \space LLEAP \space uninstallation \space complete }}$$ 
 ![](readme-images/uninstall-successful.png)
 
+## $${\color{green}{3. \space LLEAP \space installation \space complete }}$$ 
+![](readme-images/installation-complete.png)
+
+## $${\color{green}{4. \space When \space there's \space no \space LLEAP \space installed \space in \space your \space machine }}$$ 
+![](readme-images/no-lleap-installed.png)
+
 # Downloadable files needed to run this application
 
 LLEAP Application download link:
