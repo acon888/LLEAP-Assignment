@@ -31,9 +31,16 @@ Installation of **LLEAP application** can be automated using the `installLLEAP.b
 
 # Important note:
 > [!IMPORTANT]
-> When installing your python, kindly dont forget to tick the box Add python.exe to PATH. This will add the python.exe to System variables path.
+> 1. When installing your python, kindly dont forget to tick the box Add python.exe to PATH. This will add the python.exe to System variables path.
 > 
 > ![](readme-images/python-important.png)
+>
+> 2. When installing the Microsoft OpenJDK or the Eclipse Temurin JDK with Hotspot from Microsoft, please dont forget to choose `Entire feature will be installed on local hard drive`for both
+>    `Set or override JAVA_HOME variable`and `JavaSoft (Oracle) registry keys`.
+>
+> ![](readme-images/java-requirement-1.png)
+>
+> > ![](readme-images/java-requirement-2.png) 
 
 # Downloadable files needed to run this application
 
