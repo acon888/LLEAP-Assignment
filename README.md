@@ -1,6 +1,6 @@
-# LLEAP-Assignment
+# $${\color{red}LLEAP \space \color{lightblue}- \space \color{lightgreen}Assignment}$$
 
-This is my first Automation project use to test some functionalities of LLEAP application
+## This is my first Automation project use to test some functionalities of LLEAP application
 
 ## Required Softwares and Libraries:
 
@@ -17,12 +17,11 @@ Installation of **LLEAP application** can be automated using the `installLLEAP.b
 ![](readme-images/runasAdmin.png)
 
 # Below images are how suppose to be look like when you run the `installLLEAP.bat`file
-**1. Downloading the file from the web**
+## $${\color{green}{1. \space Downloading \space the \space file \space from \space the \space web}}$$ 
 ![](readme-images/downloading.png)
 
-**2. 
-
-
+## $${\color{green}{2. \space LLEAP \space uninstallation \space complete }}$$ 
+![](readme-images/uninstall-successful.png)
 
 # Downloadable files needed to run this application
 
