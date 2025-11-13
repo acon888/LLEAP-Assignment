@@ -29,6 +29,12 @@ Installation of **LLEAP application** can be automated using the `installLLEAP.b
 ## $${\color{green}{4. \space When \space there's \space no \space LLEAP \space installed \space in \space your \space machine }}$$ 
 ![](readme-images/no-lleap-installed.png)
 
+# Important note:
+> [!IMPORTANT]
+> When installing your python, kindly dont forget to tick the box Add python.exe to PATH. This will add the python.exe to System variables path.
+> 
+> ![](readme-images/python-important.png)
+
 # Downloadable files needed to run this application
 
 LLEAP Application download link:
