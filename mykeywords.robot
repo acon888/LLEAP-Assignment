@@ -2,7 +2,6 @@
 Documentation   LLEAP QA TEST AUTOMATION
 Library     SikuliLibrary   mode=NEW
 Library     Process
-
 *** Variables ***
 ${IMAGE_PATH}   ${CURDIR}${/}images
 ${APP_LOCATION}     C:\\Program Files (x86)\\Laerdal Medical\\Laerdal Simulation Home\\LaunchPortal.exe
@@ -20,7 +19,7 @@ Open LLEAP App
     Open Application    ${APP_LOCATION}
 
 Navigate Buttons
-    Set Min Similarity  0.9
+    #Set Min Similarity  0.9
     Click   lleap_btn.png
     #Sleep   10s
     Wait Until Screen Contain   add_license_later_btn.png       60
@@ -35,14 +34,15 @@ Navigate Buttons
     Wait Until Screen Contain   international_btn.png       60
     Click   international_btn.png
     sleep   3s
-    Mouse Move Location     1500    1000
+    Mouse Move Location     1000    1000
     Click   mm.png
     Click   healthy-patient.png
     Click   ok-btn.png
-    Wait Until Screen Contain   start-session.png   10
+    Wait Until Screen Contain   start-session.png   20
     Click   start-session.png
     Click   maximize.png
     Click   eye.png
+    Wait Until Screen Contain    closed.png    10
     Click   closed.png
     Click   67.png
     Sleep   2s

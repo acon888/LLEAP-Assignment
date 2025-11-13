@@ -3,14 +3,15 @@
 This is my first Automation project use to test some functionalities of LLEAP application
 
 ## Required Softwares and Libraries:
-
 1. The application uses python 3.14 and I havent tested with a different version lower than 3.14
 2. Sikuli RobotFramework library
 3. Pycharm IDE, VS Code can also be use in this application
 4. LLEAP application version 8.7.3
+5. Microsoft OpenJDK
+All the required Softwares can be downloaded from the links below under **Downloadable files needed to run this application**  
 
 # Steps to install the LLEAP application
-Installation of **LLEAP application** can be automated using the LLEAP installLLEAP.bat file found in the scripts folder. All you need to do is copy the scripts folder into your C: drive. Once the scripts folder is in your C: drive then open the folder and run the installLLEAP.bat file as Administrator. It should be look like the image below.
+Installation of **LLEAP application** can be automated using the *installLLEAP.bat* file found in the scripts folder. All you need to do is copy the scripts folder into your C: drive. Once the scripts folder is in your C: drive then open the folder and run the installLLEAP.bat file as Administrator. It should be look like the image below.
 ![](readme-images/runasAdmin.png)
 
 
@@ -33,7 +34,7 @@ Python download link:
 https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
 
 Microsoft OpenJDK download link:
-https://aka.ms/download-jdk/microsoft-jdk-25.0.1-windows-x64.zip
+https://aka.ms/download-jdk/microsoft-jdk-25.0.1-windows-x64.msi
 
 
 
