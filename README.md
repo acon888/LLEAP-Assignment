@@ -16,6 +16,11 @@ Installation of **LLEAP application** can be automated using the `installLLEAP.b
 
 ![](readme-images/runasAdmin.png)
 
+# Below images are how suppose to be look like when you run the `installLLEAP.bat`file
+**1. Downloading the file from the web**
+![](readme-images/downloading.png)
+
+**2. 
 
 
 
