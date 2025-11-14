@@ -49,8 +49,6 @@ Navigate Buttons
     ${HR_IMAGE}=    Exists    hr.png
     Run Keyword If    ${HR_IMAGE} == True  Click   hr.png
     Run Keyword If    ${HR_IMAGE} == False  Click   hr-working.png
-#    Click   hr.png
-    Sleep   2s
     Click   80.png
     Type With Modifiers     A   CTRL
     Type With Modifiers     100
@@ -62,7 +60,8 @@ Navigate Buttons
     Click   x.png
 
 Extracting Log files
-    Click           lleap-icon.png
+    Open Application    Laerdal Simulation Home
+#    Click           lleap-icon.png
     Wait Until Screen Contain     help_btn.png        5
     Right Click      help_btn.png   xOffset=0   yOffset=0
     Click           log.png
@@ -70,6 +69,5 @@ Extracting Log files
     Click           close.png
     Log             Log files has extracted and saved in C:\Users\Public\Documents\Laerdal Report Zipped
 
-#Closing the LLEAP Application
-#    Click   lleap-icon.png
-#    Click   close.png
+Closing the LLEAP Application
+    Close Application    LaunchPortal
