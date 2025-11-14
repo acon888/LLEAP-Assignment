@@ -45,8 +45,11 @@ Navigate Buttons
     Click   eye.png
     Click   closed.png
     Click   67.png
-    Sleep   2s
-    Click   hr.png
+    Sleep   5s
+    ${HR_IMAGE}=    Exists    hr.png
+    Run Keyword If    ${HR_IMAGE} == True  Click   hr.png
+    Run Keyword If    ${HR_IMAGE} == False  Click   hr-working.png
+#    Click   hr.png
     Sleep   2s
     Click   80.png
     Type With Modifiers     A   CTRL
