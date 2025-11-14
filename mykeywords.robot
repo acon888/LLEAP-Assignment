@@ -65,7 +65,7 @@ Extracting Log files
     Wait Until Screen Contain     help_btn.png        5
     Right Click      help_btn.png   xOffset=0   yOffset=0
     Click           log.png
-    Wait Until Screen Contain       laerdal_report.png      300
+    Wait Until Screen Contain       laerdal_report.png      60
     Click           close.png
     Log             Log files has extracted and saved in C:\Users\Public\Documents\Laerdal Report Zipped
 
