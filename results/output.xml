@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-15T14:07:23.634958" rpa="false" schemaversion="5">
-<suite id="s1" name="Lleap" source="C:\Users\Acon08\Documents\LLEAP-Assignment\lleap.robot">
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-15T18:39:32.483757" rpa="false" schemaversion="5">
+<suite id="s1" name="Lleap" source="C:\Users\NOACO1\OneDrive - Laerdal Medical AS\Documents\GitHub\LLEAP-Assignment\lleap.robot">
 <kw name="Run Keywords" owner="BuiltIn" type="SETUP">
 <kw name="Start Sikuli Process" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:23.674232" level="INFO">Starting process:
-java -jar C:\Users\Acon08\Documents\LLEAP-Assignment\.venv\Lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 61092 C:\Users\Acon08\Documents\LLEAP-Assignment\results</msg>
-<msg time="2025-11-15T14:07:23.679654" level="INFO">Start sikuli java process on port 61092</msg>
-<msg time="2025-11-15T14:07:24.272340" level="INFO">Sikuli java process is started</msg>
-<status status="PASS" start="2025-11-15T14:07:23.670349" elapsed="3.299337"/>
+<msg time="2025-11-15T18:39:32.558155" level="INFO">Starting process:
+java -jar "C:\Users\NOACO1\OneDrive - Laerdal Medical AS\Documents\GitHub\LLEAP-Assignment\my_venv\Lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar" 60894 "C:\Users\NOACO1\OneDrive - Laerdal Medical AS\Documents\GitHub\LLEAP-Assignment\results"</msg>
+<msg time="2025-11-15T18:39:32.575616" level="INFO">Start sikuli java process on port 60894</msg>
+<msg time="2025-11-15T18:39:33.742536" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" start="2025-11-15T18:39:32.548559" elapsed="6.315281"/>
 </kw>
 <kw name="AND Read Image From Path" owner="mykeywords">
 <kw name="Add Image Path" owner="SikuliLibrary">
 <arg>${IMAGE_PATH}</arg>
 <doc>Add image path</doc>
-<status status="PASS" start="2025-11-15T14:07:26.970153" elapsed="0.010133"/>
+<status status="PASS" start="2025-11-15T18:39:38.865737" elapsed="0.020064"/>
 </kw>
-<status status="PASS" start="2025-11-15T14:07:26.969979" elapsed="0.010402"/>
+<status status="PASS" start="2025-11-15T18:39:38.865396" elapsed="0.020516"/>
 </kw>
 <kw name="AND Open LLEAP App" owner="mykeywords">
 <kw name="Open Application" owner="SikuliLibrary">
@@ -23,281 +23,291 @@ java -jar C:\Users\Acon08\Documents\LLEAP-Assignment\.venv\Lib\site-packages\Sik
 <doc>Open application
  To open app with parameters, refer:
  https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
-<status status="PASS" start="2025-11-15T14:07:26.980709" elapsed="1.361776"/>
+<status status="PASS" start="2025-11-15T18:39:38.886320" elapsed="1.671419"/>
 </kw>
-<status status="PASS" start="2025-11-15T14:07:26.980549" elapsed="1.362025"/>
+<status status="PASS" start="2025-11-15T18:39:38.886109" elapsed="1.671827"/>
 </kw>
 <arg>Start Sikuli Process</arg>
 <arg>AND Read Image From Path</arg>
 <arg>AND Open LLEAP App</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2025-11-15T14:07:23.670191" elapsed="4.672425"/>
+<status status="PASS" start="2025-11-15T18:39:32.548321" elapsed="8.009729"/>
 </kw>
 <test id="s1-t1" name="Launching And Configuring LLEAP Application" line="9">
 <kw name="Deleting User Config File" owner="mykeywords">
 <kw name="Start Process" owner="Process">
-<msg time="2025-11-15T14:07:28.343407" level="INFO">Starting process:
-C:\Users\Acon08\Documents\LLEAP-Assignment/script.bat</msg>
-<arg>C:\\Users\\Acon08\\Documents\\LLEAP-Assignment/script.bat</arg>
+<msg time="2025-11-15T18:39:40.560385" level="INFO">Starting process:
+"C:\Users\NOACO1\OneDrive - Laerdal Medical AS\Documents\GitHub\LLEAP-Assignment/script.bat"</msg>
+<arg>C:\\Users\\NOACO1\\OneDrive - Laerdal Medical AS\\Documents\\GitHub\\LLEAP-Assignment/script.bat</arg>
 <doc>Starts a new process on background.</doc>
-<status status="PASS" start="2025-11-15T14:07:28.343284" elapsed="0.006001"/>
+<status status="PASS" start="2025-11-15T18:39:40.559850" elapsed="0.041002"/>
 </kw>
-<status status="PASS" start="2025-11-15T14:07:28.343087" elapsed="0.006287"/>
+<status status="PASS" start="2025-11-15T18:39:40.559364" elapsed="0.042108"/>
 </kw>
+<tag>Deletion of user.config file</tag>
+<status status="PASS" start="2025-11-15T18:39:40.558221" elapsed="0.043707"/>
+</test>
+<test id="s1-t2" name="Button Navigation" line="12">
 <kw name="Navigate Buttons" owner="mykeywords">
 <kw name="Set Min Similarity" owner="SikuliLibrary">
 <arg>0.6</arg>
 <doc>Set min similarity (accuracy of matching elements).</doc>
-<status status="PASS" start="2025-11-15T14:07:28.349986" elapsed="0.003499"/>
+<status status="PASS" start="2025-11-15T18:39:40.609582" elapsed="0.008276"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:31.116260" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212049658.png'/&gt;
-[log] CLICK on L[214,584]@S(0) (600 msec)</msg>
+<msg time="2025-11-15T18:39:45.915423" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228383806.png'/&gt;
+[log] CLICK on L[214,499]@S(0) (610 msec)</msg>
 <arg>lleap_btn.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:28.353624" elapsed="2.762704"/>
+<status status="PASS" start="2025-11-15T18:39:40.618938" elapsed="5.296582"/>
 </kw>
 <kw name="Wait Until Screen Contain" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:35.365444" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212055362.png'/&gt;</msg>
+<msg time="2025-11-15T18:39:53.980600" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228393974.png'/&gt;</msg>
 <arg>add_license_later_btn.png</arg>
 <arg>60</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="PASS" start="2025-11-15T14:07:31.116444" elapsed="4.249075"/>
+<status status="PASS" start="2025-11-15T18:39:45.915668" elapsed="8.065086"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:37.159570" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212055967.png'/&gt;
-[log] CLICK on L[2868,927]@S(0) (618 msec)</msg>
+<msg time="2025-11-15T18:39:56.933504" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228395181.png'/&gt;
+[log] CLICK on L[2868,927]@S(0) (602 msec)</msg>
 <arg>add_license_later_btn.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:35.365636" elapsed="1.794007"/>
+<status status="PASS" start="2025-11-15T18:39:53.981036" elapsed="2.952590"/>
 </kw>
 <kw name="Wait Until Screen Contain" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:38.461785" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212058458.png'/&gt;</msg>
+<msg time="2025-11-15T18:40:00.495717" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228400489.png'/&gt;</msg>
 <arg>Local_comp_btn.png</arg>
 <arg>60</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="PASS" start="2025-11-15T14:07:37.159769" elapsed="1.302084"/>
+<status status="PASS" start="2025-11-15T18:39:56.933866" elapsed="3.562008"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:40.375745" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212059107.png'/&gt;
-[log] CLICK on L[2743,606]@S(0) (622 msec)</msg>
+<msg time="2025-11-15T18:40:03.693453" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228401783.png'/&gt;
+[log] CLICK on L[2743,606]@S(0) (614 msec)</msg>
 <arg>Local_comp_btn.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:38.461971" elapsed="1.913843"/>
+<status status="PASS" start="2025-11-15T18:40:00.496127" elapsed="3.197430"/>
 </kw>
 <kw name="Wait Until Screen Contain" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:41.470547" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212061468.png'/&gt;</msg>
+<msg time="2025-11-15T18:40:05.687249" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228405681.png'/&gt;</msg>
 <arg>SimMan3GPlus.png</arg>
 <arg>60</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="PASS" start="2025-11-15T14:07:40.375938" elapsed="1.094673"/>
+<status status="PASS" start="2025-11-15T18:40:03.693746" elapsed="1.993666"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:43.119701" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212062007.png'/&gt;
-[log] CLICK on L[2722,580]@S(0) (603 msec)</msg>
+<msg time="2025-11-15T18:40:08.630643" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228406938.png'/&gt;
+[log] CLICK on L[2722,580]@S(0) (611 msec)</msg>
 <arg>SimMan3GPlus.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:41.470728" elapsed="1.649043"/>
+<status status="PASS" start="2025-11-15T18:40:05.687697" elapsed="2.943039"/>
 </kw>
 <kw name="Wait Until Screen Contain" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:48.086421" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212068084.png'/&gt;</msg>
+<msg time="2025-11-15T18:40:17.966202" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228417956.png'/&gt;</msg>
 <arg>continue_without_btn.png</arg>
 <arg>60</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="PASS" start="2025-11-15T14:07:43.119893" elapsed="4.966597"/>
+<status status="PASS" start="2025-11-15T18:40:08.630949" elapsed="9.335532"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:49.815340" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212068677.png'/&gt;
-[log] CLICK on L[2773,927]@S(0) (609 msec)</msg>
+<msg time="2025-11-15T18:40:20.472267" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228418878.png'/&gt;
+[log] CLICK on L[2773,927]@S(0) (612 msec)</msg>
 <arg>continue_without_btn.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:48.086605" elapsed="1.728799"/>
+<status status="PASS" start="2025-11-15T18:40:17.966914" elapsed="2.505497"/>
 </kw>
 <kw name="Wait Until Screen Contain" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:50.408501" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212070405.png'/&gt;</msg>
+<msg time="2025-11-15T18:40:21.575474" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228421570.png'/&gt;</msg>
 <arg>international_btn.png</arg>
 <arg>60</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="PASS" start="2025-11-15T14:07:49.815524" elapsed="0.593042"/>
+<status status="PASS" start="2025-11-15T18:40:20.472671" elapsed="1.102912"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:52.139808" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212070995.png'/&gt;
-[log] CLICK on L[2383,581]@S(0) (587 msec)</msg>
+<msg time="2025-11-15T18:40:24.339719" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228422673.png'/&gt;
+[log] CLICK on L[2383,581]@S(0) (605 msec)</msg>
 <arg>international_btn.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:50.408682" elapsed="1.731238"/>
+<status status="PASS" start="2025-11-15T18:40:21.575814" elapsed="2.764033"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:54.364728" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212073235.png'/&gt;
-[log] CLICK on L[2449,635]@S(0) (600 msec)</msg>
+<msg time="2025-11-15T18:40:27.957693" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228426333.png'/&gt;
+[log] CLICK on L[2449,635]@S(0) (601 msec)</msg>
 <arg>mm.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:52.140115" elapsed="2.224685"/>
+<status status="PASS" start="2025-11-15T18:40:24.340033" elapsed="3.617800"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:56.491699" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212075396.png'/&gt;
-[log] CLICK on L[2107,474]@S(0) (605 msec)</msg>
+<msg time="2025-11-15T18:40:31.295842" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228429811.png'/&gt;
+[log] CLICK on L[2107,474]@S(0) (604 msec)</msg>
 <arg>healthy-patient.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:54.364921" elapsed="2.126843"/>
+<status status="PASS" start="2025-11-15T18:40:27.958016" elapsed="3.337915"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:07:58.098846" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212077005.png'/&gt;
-[log] CLICK on L[2942,1022]@S(0) (605 msec)</msg>
+<msg time="2025-11-15T18:40:33.685912" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228432183.png'/&gt;
+[log] CLICK on L[2942,1022]@S(0) (610 msec)</msg>
 <arg>ok-btn.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:07:56.491893" elapsed="1.607019"/>
+<status status="PASS" start="2025-11-15T18:40:31.296154" elapsed="2.389950"/>
 </kw>
 <kw name="Wait Until Screen Contain" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:02.265356" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212082262.png'/&gt;</msg>
+<msg time="2025-11-15T18:40:44.160505" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228444155.png'/&gt;</msg>
 <arg>start-session.png</arg>
 <arg>60</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="PASS" start="2025-11-15T14:07:58.099029" elapsed="4.166415"/>
+<status status="PASS" start="2025-11-15T18:40:33.686365" elapsed="10.474255"/>
 </kw>
 <kw name="Exists" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:02.765034" level="INFO">${START_SESSION} = True</msg>
+<msg time="2025-11-15T18:40:45.038339" level="INFO">${START_SESSION} = True</msg>
 <var>${START_SESSION}</var>
 <arg>start-session.png</arg>
 <doc>Exists</doc>
-<status status="PASS" start="2025-11-15T14:08:02.265562" elapsed="0.499510"/>
+<status status="PASS" start="2025-11-15T18:40:44.160868" elapsed="0.877534"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:04.400059" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212083305.png'/&gt;
-[log] CLICK on L[899,593]@S(0) (602 msec)</msg>
+<msg time="2025-11-15T18:40:47.529825" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228445944.png'/&gt;
+[log] CLICK on L[899,593]@S(0) (599 msec)</msg>
 <arg>start-session.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:02.765417" elapsed="1.634708"/>
+<status status="PASS" start="2025-11-15T18:40:45.038867" elapsed="2.491075"/>
 </kw>
 <arg>${START_SESSION} == True</arg>
 <arg>Click</arg>
 <arg>start-session.png</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-11-15T14:08:02.765200" elapsed="1.634975"/>
+<status status="PASS" start="2025-11-15T18:40:45.038576" elapsed="2.491462"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${START_SESSION} == False</arg>
 <arg>Click</arg>
 <arg>start-session-hr.png</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-11-15T14:08:04.400290" elapsed="0.000164"/>
+<status status="PASS" start="2025-11-15T18:40:47.530247" elapsed="0.000309"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:05.956622" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212084893.png'/&gt;
-[log] CLICK on L[1422,166]@S(0) (595 msec)</msg>
+<msg time="2025-11-15T18:40:49.890721" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228448368.png'/&gt;
+[log] CLICK on L[1422,166]@S(0) (612 msec)</msg>
 <arg>maximize.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:04.400535" elapsed="1.556153"/>
+<status status="PASS" start="2025-11-15T18:40:47.530735" elapsed="2.360101"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:08.094910" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212086999.png'/&gt;
-[log] CLICK on L[811,899]@S(0) (606 msec)</msg>
+<msg time="2025-11-15T18:40:52.477521" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228450983.png'/&gt;
+[log] CLICK on L[811,899]@S(0) (605 msec)</msg>
 <arg>eye.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:05.956799" elapsed="2.138174"/>
+<status status="PASS" start="2025-11-15T18:40:49.891008" elapsed="2.586657"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:09.624341" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212088565.png'/&gt;
-[log] CLICK on L[782,919]@S(0) (608 msec)</msg>
+<msg time="2025-11-15T18:40:54.768864" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228453293.png'/&gt;
+[log] CLICK on L[782,919]@S(0) (616 msec)</msg>
 <arg>closed.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:08.095086" elapsed="1.529318"/>
+<status status="PASS" start="2025-11-15T18:40:52.477927" elapsed="2.291067"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:11.235394" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212090125.png'/&gt;
-[log] CLICK on L[2971,542]@S(0) (613 msec)</msg>
+<msg time="2025-11-15T18:40:57.166592" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228455713.png'/&gt;
+[log] CLICK on L[2971,542]@S(0) (608 msec)</msg>
 <arg>67.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:09.624514" elapsed="1.610943"/>
+<status status="PASS" start="2025-11-15T18:40:54.769259" elapsed="2.397458"/>
 </kw>
 <kw name="Exists" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:11.738784" level="INFO">${HR_IMAGE} = True</msg>
+<msg time="2025-11-15T18:40:58.138886" level="INFO">${HR_IMAGE} = True</msg>
 <var>${HR_IMAGE}</var>
 <arg>hr.png</arg>
 <doc>Exists</doc>
-<status status="PASS" start="2025-11-15T14:08:11.235575" elapsed="0.503246"/>
+<status status="PASS" start="2025-11-15T18:40:57.166935" elapsed="0.972000"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:13.398627" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212092289.png'/&gt;
-[log] CLICK on L[4834,113]@S(0) (606 msec)</msg>
+<msg time="2025-11-15T18:41:00.579624" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228459082.png'/&gt;
+[log] CLICK on L[4834,113]@S(0) (605 msec)</msg>
 <arg>hr.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:11.739138" elapsed="1.659558"/>
+<status status="PASS" start="2025-11-15T18:40:58.139443" elapsed="2.440285"/>
 </kw>
 <arg>${HR_IMAGE} == True</arg>
 <arg>Click</arg>
 <arg>hr.png</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-11-15T14:08:11.738944" elapsed="1.659802"/>
+<status status="PASS" start="2025-11-15T18:40:58.139135" elapsed="2.440683"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${HR_IMAGE} == False</arg>
 <arg>Click</arg>
 <arg>hr-working.png</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-11-15T14:08:13.398865" elapsed="0.000159"/>
+<status status="PASS" start="2025-11-15T18:41:00.579955" elapsed="0.000190"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:15.479394" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212094400.png'/&gt;
-[log] CLICK on L[3683,178]@S(0) (584 msec)</msg>
+<msg time="2025-11-15T18:41:03.696490" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228462276.png'/&gt;
+[log] CLICK on L[3683,178]@S(0) (609 msec)</msg>
 <arg>80.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:13.399106" elapsed="2.080352"/>
+<status status="PASS" start="2025-11-15T18:41:00.580245" elapsed="3.116334"/>
 </kw>
 <kw name="Type With Modifiers" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:15.833693" level="INFO">Input Text:
+<msg time="2025-11-15T18:41:04.070368" level="INFO">Input Text:
 CTRL+A
 [log] ( Ctrl )  TYPE "A"</msg>
 <arg>A</arg>
 <arg>CTRL</arg>
 <doc>Type with modifiers</doc>
-<status status="PASS" start="2025-11-15T14:08:15.479576" elapsed="0.354181"/>
+<status status="PASS" start="2025-11-15T18:41:03.696755" elapsed="0.373781"/>
 </kw>
 <kw name="Type With Modifiers" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:16.241102" level="INFO">Input Text:
+<msg time="2025-11-15T18:41:04.476871" level="INFO">Input Text:
 100
 [log]  TYPE "100"</msg>
 <arg>100</arg>
 <doc>Type with modifiers</doc>
-<status status="PASS" start="2025-11-15T14:08:15.833879" elapsed="0.407290"/>
+<status status="PASS" start="2025-11-15T18:41:04.070849" elapsed="0.406145"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:17.833285" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212096739.png'/&gt;
-[log] CLICK on L[3535,388]@S(0) (607 msec)</msg>
+<msg time="2025-11-15T18:41:06.769772" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228465349.png'/&gt;
+[log] CLICK on L[3535,392]@S(0) (603 msec)</msg>
 <arg>hr-ok.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:16.241279" elapsed="1.592068"/>
+<status status="PASS" start="2025-11-15T18:41:04.477188" elapsed="2.292733"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:19.439310" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212098345.png'/&gt;
-[log] CLICK on L[3283,97]@S(0) (611 msec)</msg>
+<msg time="2025-11-15T18:41:09.200921" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228467703.png'/&gt;
+[log] CLICK on L[3283,97]@S(0) (610 msec)</msg>
 <arg>coughing.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:17.833454" elapsed="1.605927"/>
+<status status="PASS" start="2025-11-15T18:41:06.770276" elapsed="2.430782"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:21.029450" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212099952.png'/&gt;
-[log] CLICK on L[3302,408]@S(0) (597 msec)</msg>
+<msg time="2025-11-15T18:41:11.505937" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228470053.png'/&gt;
+[log] CLICK on L[3302,408]@S(0) (608 msec)</msg>
 <arg>play.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:19.439518" elapsed="1.589998"/>
+<status status="PASS" start="2025-11-15T18:41:09.201314" elapsed="2.304780"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-15T18:41:14.507195" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-15T18:41:11.506330" elapsed="3.001008"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:22.632764" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212101528.png'/&gt;
-[log] CLICK on L[5094,13]@S(0) (612 msec)</msg>
+<msg time="2025-11-15T18:41:16.836161" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228475399.png'/&gt;
+[log] CLICK on L[5094,13]@S(0) (595 msec)</msg>
 <arg>x.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:21.029652" elapsed="1.603180"/>
+<status status="PASS" start="2025-11-15T18:41:14.507540" elapsed="2.328750"/>
 </kw>
-<status status="PASS" start="2025-11-15T14:07:28.349759" elapsed="54.283137"/>
+<status status="PASS" start="2025-11-15T18:39:40.606940" elapsed="96.229490"/>
 </kw>
 <kw name="Extracting Log files" owner="mykeywords">
 <kw name="Open Application" owner="SikuliLibrary">
@@ -305,93 +315,93 @@ CTRL+A
 <doc>Open application
  To open app with parameters, refer:
  https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
-<status status="PASS" start="2025-11-15T14:08:22.633351" elapsed="0.069732"/>
+<status status="PASS" start="2025-11-15T18:41:16.837382" elapsed="0.265373"/>
 </kw>
 <kw name="Wait Until Screen Contain" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:23.270778" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212103267.png'/&gt;</msg>
+<msg time="2025-11-15T18:41:18.152981" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228478147.png'/&gt;</msg>
 <arg>help_btn.png</arg>
 <arg>5</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="PASS" start="2025-11-15T14:08:22.703231" elapsed="0.567613"/>
+<status status="PASS" start="2025-11-15T18:41:17.103178" elapsed="1.049931"/>
 </kw>
 <kw name="Right Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:24.424875" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212103819.png'/&gt;
-[log] RIGHT CLICK on L[129,1010]@S(0) (602 msec)</msg>
+<msg time="2025-11-15T18:41:19.843937" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228479237.png'/&gt;
+[log] RIGHT CLICK on L[129,1095]@S(0) (601 msec)</msg>
 <arg>help_btn.png</arg>
 <arg>xOffset=0</arg>
 <arg>yOffset=0</arg>
 <doc>Right click</doc>
-<status status="PASS" start="2025-11-15T14:08:23.270973" elapsed="1.153967"/>
+<status status="PASS" start="2025-11-15T18:41:18.153350" elapsed="1.690710"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:08:26.519268" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212105438.png'/&gt;
-[log] CLICK on L[225,1023]@S(0) (606 msec)</msg>
+<msg time="2025-11-15T18:41:23.263774" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228481773.png'/&gt;
+[log] CLICK on L[225,1108]@S(0) (584 msec)</msg>
 <arg>log.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:08:24.425061" elapsed="2.094284"/>
+<status status="PASS" start="2025-11-15T18:41:19.844290" elapsed="3.419650"/>
 </kw>
 <kw name="Wait Until Screen Contain" owner="SikuliLibrary">
-<msg time="2025-11-15T14:10:54.156378" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212254151.png'/&gt;</msg>
+<msg time="2025-11-15T18:45:52.706409" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228752693.png'/&gt;</msg>
 <arg>laerdal_record.png</arg>
 <arg>1000</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="PASS" start="2025-11-15T14:08:26.519518" elapsed="147.637032"/>
+<status status="PASS" start="2025-11-15T18:41:23.264214" elapsed="269.442375"/>
 </kw>
 <kw name="Exists" owner="SikuliLibrary">
-<msg time="2025-11-15T14:10:54.702303" level="INFO">${LAERDAL_RECORD} = True</msg>
+<msg time="2025-11-15T18:45:53.983592" level="INFO">${LAERDAL_RECORD} = True</msg>
 <var>${LAERDAL_RECORD}</var>
 <arg>laerdal_record.png</arg>
 <doc>Exists</doc>
-<status status="PASS" start="2025-11-15T14:10:54.156923" elapsed="0.545415"/>
+<status status="PASS" start="2025-11-15T18:45:52.706904" elapsed="1.276764"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-11-15T14:10:56.427065" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763212255279.png'/&gt;
-[log] CLICK on L[3257,553]@S(0) (601 msec)</msg>
+<msg time="2025-11-15T18:45:57.163369" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1763228755319.png'/&gt;
+[log] CLICK on L[910,551]@S(0) (604 msec)</msg>
 <arg>laerdal_record.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-11-15T14:10:54.702675" elapsed="1.724453"/>
+<status status="PASS" start="2025-11-15T18:45:53.984729" elapsed="3.178726"/>
 </kw>
 <arg>${LAERDAL_RECORD} == True</arg>
 <arg>Click</arg>
 <arg>laerdal_record.png</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-11-15T14:10:54.702464" elapsed="1.724713"/>
+<status status="PASS" start="2025-11-15T18:45:53.984023" elapsed="3.179524"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${LAERDAL_RECORD} == False</arg>
 <arg>Click</arg>
 <arg>laerdal_record_hr.png</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-11-15T14:10:56.427305" elapsed="0.000159"/>
+<status status="PASS" start="2025-11-15T18:45:57.163708" elapsed="0.000249"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-11-15T14:11:06.428178" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-11-15T18:46:07.164834" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-11-15T14:10:56.427542" elapsed="10.000722"/>
+<status status="PASS" start="2025-11-15T18:45:57.164091" elapsed="10.000840"/>
 </kw>
 <kw name="Key Down" owner="SikuliLibrary">
 <arg>ALT</arg>
 <doc>Key down
  Press keyboard key and hold it.</doc>
-<status status="PASS" start="2025-11-15T14:11:06.428397" elapsed="0.080608"/>
+<status status="PASS" start="2025-11-15T18:46:07.165073" elapsed="0.092729"/>
 </kw>
 <kw name="Key Down" owner="SikuliLibrary">
 <arg>F4</arg>
 <doc>Key down
  Press keyboard key and hold it.</doc>
-<status status="PASS" start="2025-11-15T14:11:06.509149" elapsed="0.078906"/>
+<status status="PASS" start="2025-11-15T18:46:07.258179" elapsed="0.093907"/>
 </kw>
 <kw name="Key Up" owner="SikuliLibrary">
 <arg>ALT</arg>
 <doc>Key up
  Release keyboard key.</doc>
-<status status="PASS" start="2025-11-15T14:11:06.588202" elapsed="0.078963"/>
+<status status="PASS" start="2025-11-15T18:46:07.352352" elapsed="0.094709"/>
 </kw>
-<status status="PASS" start="2025-11-15T14:08:22.633149" elapsed="164.034110"/>
+<status status="PASS" start="2025-11-15T18:41:16.837022" elapsed="290.610300"/>
 </kw>
 <kw name="Closing the LLEAP Application" owner="mykeywords">
 <kw name="Open Application" owner="SikuliLibrary">
@@ -399,49 +409,52 @@ CTRL+A
 <doc>Open application
  To open app with parameters, refer:
  https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
-<status status="PASS" start="2025-11-15T14:11:06.667797" elapsed="0.067611"/>
+<status status="PASS" start="2025-11-15T18:46:07.449261" elapsed="0.186695"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-11-15T14:11:11.736248" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-11-15T18:46:12.637287" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-11-15T14:11:06.735537" elapsed="5.000802"/>
+<status status="PASS" start="2025-11-15T18:46:07.636295" elapsed="5.001350"/>
 </kw>
 <kw name="Close Application" owner="SikuliLibrary">
 <arg>Laerdal Simulation Home</arg>
 <doc>Close application</doc>
-<status status="PASS" start="2025-11-15T14:11:11.736464" elapsed="4.170420"/>
+<status status="PASS" start="2025-11-15T18:46:12.638149" elapsed="4.430512"/>
 </kw>
 <kw name="Close Application" owner="SikuliLibrary">
 <arg>Laerdal Simulation Engine</arg>
 <doc>Close application</doc>
-<status status="PASS" start="2025-11-15T14:11:15.907022" elapsed="2.097338"/>
+<status status="PASS" start="2025-11-15T18:46:17.069066" elapsed="2.252262"/>
 </kw>
 <kw name="Close Application" owner="SikuliLibrary">
 <arg>Voice Conference Application - Instructor</arg>
 <doc>Close application</doc>
-<status status="PASS" start="2025-11-15T14:11:18.004496" elapsed="0.003104"/>
+<status status="PASS" start="2025-11-15T18:46:19.321582" elapsed="0.007104"/>
 </kw>
-<status status="PASS" start="2025-11-15T14:11:06.667587" elapsed="11.340083"/>
+<status status="PASS" start="2025-11-15T18:46:07.448288" elapsed="11.880580"/>
 </kw>
-<status status="PASS" start="2025-11-15T14:07:28.342681" elapsed="229.665262"/>
+<tag>Button Navigation</tag>
+<status status="PASS" start="2025-11-15T18:39:40.603383" elapsed="398.726147"/>
 </test>
 <kw name="Stop Remote Server" owner="SikuliLibrary" type="TEARDOWN">
-<msg time="2025-11-15T14:11:18.010970" level="INFO">Robot Framework remote server stopping</msg>
+<msg time="2025-11-15T18:46:19.341365" level="INFO">Robot Framework remote server stopping</msg>
 <doc>Stops the remote server.</doc>
-<status status="PASS" start="2025-11-15T14:11:18.008846" elapsed="0.002170"/>
+<status status="PASS" start="2025-11-15T18:46:19.334229" elapsed="0.007267"/>
 </kw>
 <doc>LLEAP QA TEST AUTOMATION</doc>
-<status status="PASS" start="2025-11-15T14:07:23.635975" elapsed="234.375072"/>
+<status status="PASS" start="2025-11-15T18:39:32.486259" elapsed="406.855327"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">Button Navigation</stat>
+<stat pass="1" fail="0" skip="0">Deletion of user.config file</stat>
 </tag>
 <suite>
-<stat name="Lleap" id="s1" pass="1" fail="0" skip="0">Lleap</stat>
+<stat name="Lleap" id="s1" pass="2" fail="0" skip="0">Lleap</stat>
 </suite>
 </statistics>
 <errors>
