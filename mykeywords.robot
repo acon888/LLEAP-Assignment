@@ -22,19 +22,16 @@ Open LLEAP App
 Navigate Buttons
     Set Min Similarity  0.6
     Click   lleap_btn.png
-    #Sleep   10s
     Wait Until Screen Contain   add_license_later_btn.png       60
     Click   add_license_later_btn.png
     Wait Until Screen Contain   Local_comp_btn.png      60
     Click   Local_comp_btn.png
-    Sleep   3s
     Wait Until Screen Contain   SimMan3GPlus.png        60
     Click   SimMan3GPlus.png
     Wait Until Screen Contain   continue_without_btn.png        60
     Click   continue_without_btn.png
     Wait Until Screen Contain   international_btn.png       60
     Click   international_btn.png
-    sleep   3s
     Mouse Move Location     300    300
     Click   mm.png
     Click   healthy-patient.png
@@ -47,7 +44,6 @@ Navigate Buttons
     Click   eye.png
     Click   closed.png
     Click   67.png
-    Sleep   5s
     ${HR_IMAGE}=    Exists    hr.png
     Run Keyword If    ${HR_IMAGE} == True  Click   hr.png
     Run Keyword If    ${HR_IMAGE} == False  Click   hr-working.png
@@ -56,14 +52,11 @@ Navigate Buttons
     Type With Modifiers     100
     Click   hr-ok.png
     Click   coughing.png
-    Sleep   2s
     Click   play.png
-    Sleep   5s
     Click   x.png
 
 Extracting Log files
     Open Application    Laerdal Simulation Home
-#    Click           lleap-icon.png
     Wait Until Screen Contain     help_btn.png        5
     Right Click      help_btn.png   xOffset=0   yOffset=0
     Click           log.png
