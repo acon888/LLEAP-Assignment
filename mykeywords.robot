@@ -74,3 +74,5 @@ Closing the LLEAP Application
     Close Application    Laerdal Simulation Home
     Close Application    Laerdal Simulation Engine
     Close Application    Voice Conference Application - Instructor
+
+# =================== END OF CODE =================================================

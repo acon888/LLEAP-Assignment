@@ -127,4 +127,3 @@ SET "LLEAP_Distribution=C:\Program Files (x86)\Laerdal Medical\Instructor Applic
 
 :EndScript
     powershell -Command "Write-Host 'All LLEAP applications successfully uninstalled!!!' -ForegroundColor Green"
-	appwiz.cpl

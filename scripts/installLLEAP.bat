@@ -53,3 +53,5 @@ powershell -Command "Write-Host 'Installation Complete!' -ForegroundColor Green"
 
 pause
 endlocal
+
+:: ======================================= END OF CODE ===============================================================================
