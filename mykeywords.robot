@@ -67,9 +67,14 @@ Extracting Log files
     Wait Until Screen Contain     help_btn.png        5
     Right Click      help_btn.png   xOffset=0   yOffset=0
     Click           log.png
-    Open Application    Laerdal Simulation Home
-    Sleep    3s
-   # Click           close.png
-    #Log             Log files has extracted and saved in C:\Users\Public\Documents\Laerdal Report Zipped
+    Wait Until Screen Contain    laerdal_record.png    1000
+    Sleep    10s
+    Key Down    ALT
+    Key Down    F4
+    Key Up      ALT
 Closing the LLEAP Application
-    Close Application    LaunchPortal
+    Open Application    Laerdal Simulation Home
+    Sleep    5s
+    Close Application    Laerdal Simulation Home
+    Close Application    Laerdal Simulation Engine
+    Close Application    Voice Conference Application - Instructor
