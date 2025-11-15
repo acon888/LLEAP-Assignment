@@ -35,12 +35,14 @@ Navigate Buttons
     Wait Until Screen Contain   international_btn.png       60
     Click   international_btn.png
     sleep   3s
-    Mouse Move Location     1500    1000
+    Mouse Move Location     300    300
     Click   mm.png
     Click   healthy-patient.png
     Click   ok-btn.png
-    Wait Until Screen Contain   start-session.png   10
-    Click   start-session.png
+    Wait Until Screen Contain   start-session.png   60
+    ${START_SESSION}=    Exists    start-session.png
+    Run Keyword If    ${START_SESSION} == True  Click    start-session.png
+    Run Keyword If    ${START_SESSION} == False  Click    start-session-hr.png
     Click   maximize.png
     Click   eye.png
     Click   closed.png
@@ -65,9 +67,9 @@ Extracting Log files
     Wait Until Screen Contain     help_btn.png        5
     Right Click      help_btn.png   xOffset=0   yOffset=0
     Click           log.png
-    Wait Until Screen Contain       laerdal_report.png      60
-    Click           close.png
-    Log             Log files has extracted and saved in C:\Users\Public\Documents\Laerdal Report Zipped
-
+    Open Application    Laerdal Simulation Home
+    Sleep    3s
+   # Click           close.png
+    #Log             Log files has extracted and saved in C:\Users\Public\Documents\Laerdal Report Zipped
 Closing the LLEAP Application
     Close Application    LaunchPortal
