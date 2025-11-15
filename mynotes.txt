@@ -1,7 +1,7 @@
  #This will open C:\Users\Public\Documents\Laerdal Report Zipped folder and the logs are saved from this folder
     #Location: Computer Configuration\Windows Settings\Security Settings\Local Policies\SecurityOptions\
     #User Account Control: Switch to the secure desktop when prompting for elevation
-    # reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v PromptOnSecureDesktop /t REG_DWORD /d 0 /f ======== 1 to Enable 0 to disable
+    # reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v ConsentPromptBehaviorAdmin /t REG_DWORD /d 0 /f ========> 0 to 5
 
 #    ${LOCAL_COMP_exists}=   Exists      Local_comp_btn.png
 #    Run Keyword IF  ${LOCAL_COMP_exists} == True    Wait Until Screen Contain   Local_comp_btn.png      60

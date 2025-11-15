@@ -8,7 +8,6 @@ ${IMAGE_PATH}   ${CURDIR}${/}images
 ${APP_LOCATION}     C:\\Program Files (x86)\\Laerdal Medical\\Laerdal Simulation Home\\LaunchPortal.exe
 
 
-
 *** Keywords ***
 Deleting User Config File
     Start Process   ${CURDIR}/script.bat
@@ -68,6 +67,7 @@ Extracting Log files
     Key Down    ALT
     Key Down    F4
     Key Up      ALT
+
 Closing the LLEAP Application
     Open Application    Laerdal Simulation Home
     Sleep    5s
