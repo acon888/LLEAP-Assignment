@@ -63,14 +63,13 @@ Extracting Log files
     ${LAERDAL_RECORD}=    Exists    laerdal_record.png
     Run Keyword If     ${LAERDAL_RECORD} == True     Click    laerdal_record.png
     Run Keyword If    ${LAERDAL_RECORD} == False    Click    laerdal_record_hr.png
-    Sleep    10s
+    Sleep    3s
     Key Down    ALT
     Key Down    F4
     Key Up      ALT
 
 Closing the LLEAP Application
     Open Application    Laerdal Simulation Home
-    Sleep    5s
     Close Application    Laerdal Simulation Home
     Close Application    Laerdal Simulation Engine
     Close Application    Voice Conference Application - Instructor
