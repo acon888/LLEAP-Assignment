@@ -10,7 +10,7 @@
 setlocal
 
 :: === Configuration ===
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v ConsentPromptBehaviorAdmin /t REG_DWORD /d 0 /f"
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v ConsentPromptBehaviorAdmin /t REG_DWORD /d 0 /f
 gpupdate /force
 set "folderPath=C:\TEMP"
 set "downloadUrl=https://cdn.laerdal.com/downloads/f7618/Setup_LLEAP_8.7.3.exe"
