@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-16T06:24:09.360912" rpa="false" schemaversion="5">
+<suite id="s1" name="Lleap" source="C:\Users\NOACO1\OneDrive - Laerdal Medical AS\Documents\GitHub\LLEAP-Assignment\lleap.robot">
+<test id="s1-t1" name="Launching And Configuring LLEAP Application" line="9">
+<kw name="Add Image Path">
+<msg time="2025-11-16T06:24:09.412632" level="FAIL">No keyword with name 'Add Image Path' found.</msg>
+<arg>${IMAGE_PATH}</arg>
+<status status="FAIL" start="2025-11-16T06:24:09.412589" elapsed="0.000095">No keyword with name 'Add Image Path' found.</status>
+</kw>
+<kw name="Open Application">
+<arg>${APP_LOCATION}</arg>
+<status status="NOT RUN" start="2025-11-16T06:24:09.412945" elapsed="0.000024"/>
+</kw>
+<kw name="Deleting User Config File" owner="mykeywords">
+<status status="NOT RUN" start="2025-11-16T06:24:09.413225" elapsed="0.000028"/>
+</kw>
+<kw name="Navigate Buttons" owner="mykeywords">
+<status status="NOT RUN" start="2025-11-16T06:24:09.413599" elapsed="0.000025"/>
+</kw>
+<kw name="Extracting Log files" owner="mykeywords">
+<status status="NOT RUN" start="2025-11-16T06:24:09.413866" elapsed="0.000021"/>
+</kw>
+<kw name="Closing the LLEAP Application" owner="mykeywords">
+<status status="NOT RUN" start="2025-11-16T06:24:09.414113" elapsed="0.000020"/>
+</kw>
+<status status="FAIL" start="2025-11-16T06:24:09.411236" elapsed="0.003143">No keyword with name 'Add Image Path' found.</status>
+</test>
+<doc>LLEAP QA TEST AUTOMATION</doc>
+<status status="FAIL" start="2025-11-16T06:24:09.362755" elapsed="0.052393"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lleap" id="s1" pass="0" fail="1" skip="0">Lleap</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-11-16T06:24:09.408476" level="ERROR">Error in file 'C:\Users\NOACO1\OneDrive - Laerdal Medical AS\Documents\GitHub\LLEAP-Assignment\mykeywords.robot' on line 4: Library 'SikuliLibrary' got unexpected named arguments 'capture_screen' and 'screenshot_on_error'.</msg>
+</errors>
+</robot>
