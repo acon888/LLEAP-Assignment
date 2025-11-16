@@ -20,6 +20,17 @@ pip install -r requirements.txt
 
 https://marketsquare.github.io/robotframework-SikuliLibrary/docs/SikuliLibrary.html
 
+================================
+
+    Wait Until Screen Contain    laerdal_record.png   1000
+    ${LAERDAL_RECORD}=    Exists    laerdal_record.png
+    Run Keyword If     ${LAERDAL_RECORD} == True     Click    laerdal_record.png
+    Run Keyword If    ${LAERDAL_RECORD} == False    Click    laerdal_record_hr.png
+    Sleep    2s
+    Key Down    ALT
+    Key Down    F4
+    Key Up      ALT
+
 
 
 

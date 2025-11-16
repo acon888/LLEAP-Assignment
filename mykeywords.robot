@@ -59,18 +59,9 @@ Extracting Log files
     Wait Until Screen Contain     help_btn.png        5
     Right Click      help_btn.png   xOffset=0   yOffset=0
     Click           log.png
-    Wait Until Screen Contain    laerdal_record.png   1000
-    ${LAERDAL_RECORD}=    Exists    laerdal_record.png
-    Run Keyword If     ${LAERDAL_RECORD} == True     Click    laerdal_record.png
-    Run Keyword If    ${LAERDAL_RECORD} == False    Click    laerdal_record_hr.png
-    Sleep    2s
-    Key Down    ALT
-    Key Down    F4
-    Key Up      ALT
 
 Closing the LLEAP Application
     Open Application    Laerdal Simulation Home
-    Sleep    5s
     Close Application    Laerdal Simulation Home
     Close Application    Laerdal Simulation Engine
     Close Application    Voice Conference Application - Instructor
