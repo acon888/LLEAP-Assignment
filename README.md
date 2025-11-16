@@ -70,7 +70,18 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 5. You will see then on What's new in Pycharm 2025.2  window, with all your LLEAP-Assignment files are shown in the left side of your screen below the Project folder.
 
    ![](readme-images/Whats_new.png)
+
+# Setting up your and configuring your Python interpreter.
+1. In your pycharm window, click on the Terminal icon.
    
+   ![](readme-images/terminal.png)
+
+2. In the terminal window type in the command `python -m venv .venv` and press Enter.
+
+   ![](readme-images/python_m.png)
+
+3. 
+
 # Downloadable files needed to run this application
 
 LLEAP Application download link:
