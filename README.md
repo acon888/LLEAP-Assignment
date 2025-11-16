@@ -51,9 +51,11 @@ All mentioned softwares needed are available under Downloadable files below.
 
 ## Setting up your IDE environment ##
 After you download or clone the repository, Open your preferred IDE. (_for me i use Pycharm_)
-1. When you first launch Pycharm you will the same image as below or slightly similar since i already use Pycharm so I dont get the Readme file or What's new.
-2. Click on the Open icon and then open the folder or repository that you have cloned.
-3. Look for the folder that you've downloaded and then click on `Select Folder`
+1. When you first launch Pycharm application you will get into the Welcome to Pycharm screen window.
+   ![](readme-images/welcome_to_Pycharm.png)
+2. 
+3. Click on the Open icon and then open the folder or repository that you have cloned.
+4. Look for the folder that you've downloaded and then click on `Select Folder`
    
 # Downloadable files needed to run this application
 
