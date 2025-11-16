@@ -71,7 +71,7 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 
    ![](readme-images/Whats_new.png)
 
-# Setting up your and configuring your Python interpreter.
+# Setting up your environment variable and configuring your Python interpreter.
 1. In your pycharm window, click on the Terminal icon.
    
    ![](readme-images/terminal.png)
@@ -88,25 +88,58 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 
    ![](readme-images/activate.png)
 
-5. Next in the terminal 
-
-6. Once your environment variable is activate then you need to add your python interpreter. Press CTRL + ALT + S on your keyboard.
+5. Once your environment variable is activate then you need to add your python interpreter. Press CTRL + ALT + S on your keyboard.
    Under Python click on the small drop won arrow and click `Interpreter`. Next click on `Add Interpreter`->`Add Local Interpreter`
 
     ![](readme-images/add_interpreter.png)
 
-7. You will get a pop up regardign `Add Python Interpreter`. Click on `Select existing interpreter`then click `OK`-> `Apply`then `Ok`.
+6. You will get a pop up regardign `Add Python Interpreter`. Click on `Select existing interpreter`then click `OK`-> `Apply`then `Ok`.
 
-      ![](readme-images/existing_interpreter.png)
+      ![](readme-images/existing_interpreter.png) 
 
-
-
-   
-
-8. Next in the terminal window type in the command `pip install -r requirements.txt`, this will install all the plugins required to run this application.
+7. Next in the terminal window type in the command `pip install -r requirements.txt`, this will install all the plugins required to run this application.
 
    ![](readme-images/pip_install_requirements.png)
 
+# How to use the application 
+To use the application, simply type in the command `robot -d results lleap.robot`in the terminal, the application will then run automatically.
+This application test the following features listed below:
+
+## Test Case 1 that has been implemented 
+
+> 1) Start Laerdal Simulation Home
+>
+> 2) Click on the Instructor Application.
+> 
+> 3) When requested to add the license, click on “Add license later”
+>
+> 4)  Click on the Local Computer tile in the Virtual Simulator section.
+>
+> 5)  Click on SimMan3G Plus
+>
+> 6) Click on the Manual Mode
+> 
+> 7) Expand the list of Themes.
+> 
+> 8) Click on the Healthy Patient theme.
+> 
+> 9) Click on the OK button in the bottom right corner of the UI.
+> 
+> 10) Click on the Start Session
+> 
+> 11) Maximize the window.
+> 
+> 12) For the Eyes control, select the “Closed” option.
+> 
+> 13) For the Lung compliance, change the value of the slider to 67%.
+> 
+> 14) On the Patient monitor (top right area of US with information about vitals), click on the HR value, and change it to one hundred.
+> 
+> 15) For the Voices, select the Coughing and play it once.
+> 
+> 16) Close the application using the “X” button.
+> 
+> 
 
 # Downloadable files needed to run this application
 
