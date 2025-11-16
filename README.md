@@ -40,7 +40,20 @@ Installation of **LLEAP application** can be automated using the `installLLEAP.b
 >
 > ![](readme-images/java-requirement-1.png)
 >
-> > ![](readme-images/java-requirement-2.png) 
+> > ![](readme-images/java-requirement-2.png)
+
+## What's Next? 
+Once you're done installing the LLEAP application, the next thing you're going to do is to install the necessary softwares needed inorder to run this program. All softwares needed can be downloaded from the Downloadable files below.
+This includes the following:
+> 1. Python Application
+> 
+> 2. Pycharm / Visual Studio code - This will be your IDE editor
+> 
+> 3. Micorsoft OpenJDK
+> 
+> 4. SikuliX IDE (`optional`)
+>
+
 
 # Downloadable files needed to run this application
 
