@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation   LLEAP QA TEST AUTOMATION
-Library     SikuliLibrary   mode=NEW
+#Library     SikuliLibrary    mode=NEW
+Library     SikuliLibrary    mode=NEW    screenshot_on_error=True    capture_screen=False
 Library     Process
 
 *** Variables ***
