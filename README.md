@@ -80,7 +80,10 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 
    ![](readme-images/python_m.png)
 
-3. 
+3. This will create a .venv folder use to store your Python virtual environment.
+
+   ![](readme-images/python_env.png)
+
 
 # Downloadable files needed to run this application
 
