@@ -89,11 +89,19 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
    ![](readme-images/activate.png)
 
 5. Once your environment variable is activate then you need to add your python interpreter. Press CTRL + ALT + S on your keyboard.
-   Under Python click on the small drop won arrow and click `Interpreter`. Next click on `Add Interpreter``->``Add Local Interpreter`
+   Under Python click on the small drop won arrow and click `Interpreter`. Next click on `Add Interpreter`->`Add Local Interpreter`
 
     ![](readme-images/add_interpreter.png)
 
-7. Next in the terminal window type in the command `pip install -r requirements.txt`, this will install all the plugins required to run this application.
+6. You will get a pop up regardign `Add Python Interpreter`. Click on `Select existing interpreter`then click `OK`-> `Apply`then `Ok`.
+
+      ![](readme-images/existing_interpreter.png)
+
+
+
+   
+
+8. Next in the terminal window type in the command `pip install -r requirements.txt`, this will install all the plugins required to run this application.
 
    ![](readme-images/pip_install_requirements.png)
 
