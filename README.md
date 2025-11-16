@@ -56,10 +56,14 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
    ![](readme-images/welcome_to_Pycharm.png)
     
 2. Click on the Open icon button.
-3. 
+   
    ![](readme-images/open_icon.png)
    
-6. Look for the folder that you've downloaded and then click on `Select Folder`
+3. Look for the folder that you've downloaded and then click on `Select Folder`
+
+   ![](readme-images/click_select_folder.png)
+
+4. 
    
 # Downloadable files needed to run this application
 
