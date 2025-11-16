@@ -139,7 +139,19 @@ This application test the following features listed below:
 > 
 > 16) Close the application using the “X” button.
 > 
+## Test Case 2 that has been implemented 
+
+> 1) Start Laerdal Simulation Home
+>
+> 2) Right click on the Help tile..
 > 
+> 3) Select “Collect client log files” option.
+>
+> 4) Manage User Account Control if needed.
+>
+> 5)  Verify that logs were collected.
+>
+
 
 # Downloadable files needed to run this application
 
