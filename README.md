@@ -28,33 +28,33 @@ Installation of **LLEAP application** can be automated using the `installLLEAP.b
 
 ## $${\color{green}{4. \space When \space there's \space no \space LLEAP \space installed \space in \space your \space machine }}$$ 
 ![](readme-images/no-lleap-installed.png)
+## What's Next? ##
+Once you're done installing the LLEAP application, the next thing you're going to do is download and install the following Softrwares:
+> 1. Python Application
+> 2. Microsoft OpenJDK
+> 3. Pycharm / or Visual Studio
+> 4. SikulixIDE (_Optional_)
+
+All mentioned softwares needed are available under Downloadable files below.
 
 # Important note:
 > [!IMPORTANT]
-> 1. When installing your python, kindly dont forget to tick the box Add python.exe to PATH. This will add the python.exe to System variables path.
+> 1. When installing your python, dont forget to tick the box _Add python.exe to PATH_. This will add the python.exe to System variables path.
 > 
 > ![](readme-images/python-important.png)
 >
-> 2. When installing the Microsoft OpenJDK or the Eclipse Temurin JDK with Hotspot from Microsoft, please dont forget to choose `Entire feature will be installed on local hard drive`for both
->    `Set or override JAVA_HOME variable`and `JavaSoft (Oracle) registry keys`.
->
-> ![](readme-images/java-requirement-1.png)
->
-> > ![](readme-images/java-requirement-2.png)
-
-## What's Next? 
-Once you're done installing the LLEAP application, the next thing you're going to do is to install the necessary softwares needed inorder to run this program. All softwares needed can be downloaded from the Downloadable files below.
-This includes the following:
-> 1. Python Application
-> 
-> 2. Pycharm / Visual Studio code - This will be your IDE editor
-> 
-> 3. Micorsoft OpenJDK
-> 
-> 4. SikuliX IDE (`optional`)
->
+> 2. When installing the Microsoft OpenJDK dont forget to tick the boxes thatsays `Modify PATH environment`, `Associate Micorosft Build with OpenJDK`and
+>    `Sets or oeverrides JAVA_HOME environment variable`or you can refer on the image below.
+>    
+> ![](readme-images/MicrosoftOpenJDK.png)
 
 
+## Setting up your IDE environment ##
+After you download or clone the repository, Open your preferred IDE. (_for me i use Pycharm_)
+1. When you first launch Pycharm you will the same image as below or slightly similar since i already use Pycharm so I dont get the Readme file or What's new.
+2. Click on the Open icon and then open the folder or repository that you have cloned.
+3. Look for the folder that you've downloaded and then click on `Select Folder`
+   
 # Downloadable files needed to run this application
 
 LLEAP Application download link:
@@ -73,9 +73,7 @@ Python download link:
 https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
 
 Microsoft OpenJDK download link:
-https://aka.ms/download-jdk/microsoft-jdk-25.0.1-windows-x64.zip
-
-
+https://aka.ms/download-jdk/microsoft-jdk-25.0.1-windows-x64.exe
 
 # References:
 
