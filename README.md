@@ -88,12 +88,14 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 
    ![](readme-images/activate.png)
 
-5. Once your environment variable is activate then you need to add your python interpreter. Press CTRL + ALT + S on your keyboard.
+5. Next in the terminal 
+
+6. Once your environment variable is activate then you need to add your python interpreter. Press CTRL + ALT + S on your keyboard.
    Under Python click on the small drop won arrow and click `Interpreter`. Next click on `Add Interpreter`->`Add Local Interpreter`
 
     ![](readme-images/add_interpreter.png)
 
-6. You will get a pop up regardign `Add Python Interpreter`. Click on `Select existing interpreter`then click `OK`-> `Apply`then `Ok`.
+7. You will get a pop up regardign `Add Python Interpreter`. Click on `Select existing interpreter`then click `OK`-> `Apply`then `Ok`.
 
       ![](readme-images/existing_interpreter.png)
 
