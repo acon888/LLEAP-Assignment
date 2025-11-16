@@ -162,7 +162,7 @@ This application test the following features listed below:
 # Downloadable files needed to run this application
 
 LLEAP Application download link:
-https://cdn.laerdal.com/downloads/f7618/Setup\_LLEAP\_8.7.3.exe
+https://cdn.laerdal.com/downloads/f7618/Setup_LLEAP_8.7.3.exe
 
 SikuliX IDE download link:
 https://launchpad.net/sikuli/sikulix/2.0.5/+download/sikulixide-2.0.5.jar
