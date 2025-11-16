@@ -63,7 +63,9 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 
    ![](readme-images/click_select_folder.png)
 
-4. 
+4. A Trust and Open Project 'LLEAP-Assignment' window is shown, Click on `Trust Project`.
+
+   ![](readme-images/trust_project.png)
    
 # Downloadable files needed to run this application
 
