@@ -86,7 +86,14 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 
 4. In the terminal window type in the command `.\.venv\Scripts\activate.bat`, this will activate your python environment.
 
-5. Next in the terminal window type in the command `pip install -r requirements.txt`, this will install all the plugins required to run this application.
+   ![](readme-images/activate.png)
+
+5. Once your environment variable is activate then you need to add your python interpreter. Press CTRL + ALT + S on your keyboard.
+   Under Python click on the small drop won arrow and click `Interpreter`. Next click on `Add Interpreter``->``Add Local Interpreter`
+
+    ![](readme-images/add_interpreter.png)
+
+7. Next in the terminal window type in the command `pip install -r requirements.txt`, this will install all the plugins required to run this application.
 
    ![](readme-images/pip_install_requirements.png)
 
