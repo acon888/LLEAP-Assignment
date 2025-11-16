@@ -150,8 +150,14 @@ This application test the following features listed below:
 > 4) Manage User Account Control if needed.
 >
 > 5)  Verify that logs were collected.
->
 
+
+> [!Warning]
+> 
+> Since Sikuli robot framework uses an image detection, slight changes on the image may result that the robot wont detect the image. It is advisable to use a unique image or if not use a multiple image with different resolutions.
+> 
+> When installing the LLEAP application using the `installLLEAP.bat`file, it is better to dont put your machine to sleep mode as this will disconnect the internet connection that may result an incomplete download of the LLEAP 8.7.3 file.
+> 
 
 # Downloadable files needed to run this application
 
