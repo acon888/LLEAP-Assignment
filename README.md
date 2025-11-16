@@ -84,7 +84,7 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 
    ![](readme-images/python_env.png)
 
-4. In the terminal window type in the command `.\.venv\Scripts\activate`, this will activate your python environment.
+4. In the terminal window type in the command `.\.venv\Scripts\activate.bat`, this will activate your python environment.
 
    ![](readme-images/activate.png)
 
