@@ -86,6 +86,7 @@ After you download or clone the repository, Open your preferred IDE. (_for me i 
 
 4. In the terminal window type in the command `.\.venv\Scripts\activate`, this will activate your python environment.
 
+   ![](readme-images/activate.png)
 
 # Downloadable files needed to run this application
 
