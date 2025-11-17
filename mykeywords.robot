@@ -63,9 +63,7 @@ Extracting Log files
 Closing the LLEAP Application
     Wait Until Screen Contain    laerdal_record.png    1000
     Open Application     Laerdal Simulation Home
-    Sleep                5s
+    Sleep                2s
     Close Application    Laerdal Simulation Home
-    Close Application    Laerdal Simulation Engine
-    Close Application    Voice Conference Application - Instructor
 
 # =================== END OF CODE =================================================
