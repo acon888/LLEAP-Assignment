@@ -65,5 +65,7 @@ Closing the LLEAP Application
     Open Application     Laerdal Simulation Home
     Sleep                2s
     Close Application    Laerdal Simulation Home
+    Close Application    Laerdal Simulation Engine
+    Close Application    Voice Conference Application - Instructor
 
 # =================== END OF CODE =================================================
